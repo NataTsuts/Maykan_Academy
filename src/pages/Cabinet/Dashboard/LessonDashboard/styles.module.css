@@ -1,0 +1,77 @@
+.title {
+    font-weight: 500;
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.progress {
+    min-width: 240px;
+    height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #232323;
+    margin-right: 40px;
+}
+
+.progressBar {
+    width: 100px;
+    height: 100px;
+}
+
+.progressBar text {
+    font-weight: 500;
+}
+
+.tasksWrapper {
+    position: relative;
+    width: 100%;
+    min-height: 330px;
+    padding: 13px 9px 35px 28px;
+    background-color: #232323;
+    border-radius: 10px;
+}
+
+.tasksTitle {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.empty {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    font-weight: 300;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 1024px) {
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .progress {
+        margin-right: 0;
+        margin-bottom: 55px;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .tasksWrapper {
+        padding-top: 20px;
+        padding-left: 17px;
+    }
+
+    .tasksTitle {
+        font-size: 20px;
+    }
+}

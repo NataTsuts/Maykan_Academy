@@ -1,0 +1,19 @@
+.wrapper {
+    display: flex;
+    font-family: Raleway, sans-serif;
+}
+
+.cabinetContainer {
+    padding-top: 160px;
+}
+
+@media screen and (max-width: 768px) {
+    .cabinetContainer {
+        padding-top: 80px;
+    }
+
+    .wrapper {
+        flex-direction: column;
+        margin-bottom: 75px;
+    }
+}

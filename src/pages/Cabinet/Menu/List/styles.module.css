@@ -1,0 +1,8 @@
+@media screen and (max-width: 426px) {
+    .list {
+        display: flex;
+        align-items: center;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+}

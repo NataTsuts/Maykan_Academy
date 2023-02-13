@@ -1,0 +1,172 @@
+.cardWrapper {
+    padding: 0 15px;
+}
+
+.card {
+    font-family: Raleway;
+    font-weight: 400;
+    border-radius: 10px;
+    max-width: 420px;
+    background-color: rgba(255, 255, 255, .05);
+    padding: 50px 43px;
+    margin-bottom: 20px;
+}
+
+.title {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 30px
+}
+
+.list {
+    list-style: initial;
+    margin-bottom: 30px;
+    padding-left: 10px
+}
+
+.listItem {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #fff
+}
+
+.listItem:not(:last-child) {
+    margin-bottom: 10px
+}
+
+.price {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 42px;
+    margin-bottom: 50px;
+    display: block;
+    font-feature-settings: "pnum" on, "lnum" on
+}
+
+.oldPrice {
+    color: rgba(255, 255, 255, .5);
+    position: relative;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 42px;
+    display: block;
+    font-feature-settings: "pnum" on, "lnum" on;
+}
+
+.oldPrice::after {
+    content: '';
+    position: absolute;
+    width: 75px;
+    height: 4px;
+    background: orangered;
+    top: 50%;
+    left: 0;
+    transform: translate(-10px, -50%) rotate(-20deg);
+}
+
+.pricingWrapper {
+    max-width: 226px;
+    margin-bottom: 30px
+}
+
+.monthlyPrice {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 26px;
+    margin-bottom: 5px;
+    font-feature-settings: "pnum" on, "lnum" on
+}
+
+.priceDescription {
+    font-size: 15px;
+    line-height: 18px
+}
+
+.buttonsWrapper {
+    max-width: 354px;
+    display: flex;
+    align-items: center;
+    flex-direction: column
+}
+
+.button {
+    font-family: Raleway, sans-serif;
+    flex-shrink: 0;
+    display: flex;
+    padding: 18px 145px;
+    margin-bottom: 15px;
+    color: #fff;
+    background-color: #da3a30;
+    border: transparent;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    cursor: pointer
+}
+
+.darkButton {
+    cursor: pointer;
+    padding: 18px 132px;
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff
+}
+
+.light {
+    transition: .3s linear
+}
+
+.light:hover {
+    background-color: #df5d55
+}
+
+.dark {
+    transition: .3s linear
+}
+
+.dark:hover {
+    color: #0a0a0a;
+    background-color: #e3e3e3
+}
+
+@media (max-width: 1440px) {
+    .card {
+        padding-top: 47px;
+        max-width: 360px;
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+
+    .button {
+        padding: 18px 132px;
+    }
+
+    .darkButton {
+        padding: 18px 120px;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        max-width: 320px;
+    }
+
+    .button {
+        padding: 18px 92px;
+    }
+
+    .darkButton {
+        padding: 18px 80px;
+    }
+}

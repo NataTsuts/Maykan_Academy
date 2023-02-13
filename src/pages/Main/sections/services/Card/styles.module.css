@@ -1,0 +1,64 @@
+.card {
+    width: 100%;
+    max-width: 460px;
+    height: 240px;
+    background: rgba(255, 255, 255, .05);
+    border-radius: 10px;
+    padding: 30px 70px 0 30px;
+    border: 1px solid transparent;
+    transition: .45s ease-in-out
+}
+
+.card:nth-child(even) {
+    text-align: right;
+    padding: 30px 30px 0px 70px;
+}
+
+.card:hover {
+    background-color: #000;
+    border: 1px solid red
+}
+
+.card:not(:last-child) {
+    margin-bottom: 50px
+}
+
+.title {
+    font-family: Raleway;
+    font-weight: 500;
+    display: block;
+    font-size: 30px;
+    line-height: 35px;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    margin-bottom: 25px
+}
+
+.text {
+    font-family: Raleway;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px
+}
+
+@media (max-width: 1000px) {
+    .card:nth-child(even) {
+        text-align: left;
+        padding: 30px 70px 0 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .title {
+        font-size: 22px;
+    }
+
+    .text {
+        font-size: 18px;
+    }
+}
+
+
+
+
+

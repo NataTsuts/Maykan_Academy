@@ -1,0 +1,256 @@
+.hero {
+    background-size: 120%;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.fade {
+    position: absolute;
+    width: 100%;
+    bottom: -50%;
+    z-index: 0;
+}
+
+.heroContent {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    min-height: 800px;
+    padding-bottom: 15px;
+    padding-top: 140px;
+}
+
+.heroContentTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 90px;
+}
+
+.heroContentTopLeft {
+    display: flex;
+    flex-direction: column;
+    width: 327px
+}
+
+.heroContentTopText {
+    font-family: Raleway;
+    font-weight: 600;
+    font-size: 20px;
+    color: #9f9f9f;
+    text-transform: uppercase;
+    margin-bottom: 10px
+}
+
+.heroContentTopTitle {
+    font-family: "Cormorant Garamond";
+    font-weight: 600;
+    font-size: 72px;
+    text-transform: uppercase;
+    margin-bottom: 50px
+}
+
+.heroContentTopSession {
+    font-family: Raleway;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #9f9f9f;
+    text-transform: uppercase;
+    margin-bottom: 15px
+}
+
+.heroContentTopLessonsWrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.heroContentTopLessonsImg {
+    width: 28px;
+    height: 28px;
+}
+
+.heroContentTopLessons {
+    font-family: Raleway;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    padding-left: 39px;
+}
+
+.heroContentTopButton {
+    font-family: Raleway, sans-serif;
+    text-align: center;
+    padding: 18px 24px;
+    max-width: 188px;
+    background-color: #da3a30;
+    font-size: 16px;
+    line-height: 19px;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 10px;
+    cursor: pointer;
+    border: transparent;
+}
+
+.heroContentBottom {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.heroContentBottomSocial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, .2);
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+}
+
+.heroContentBottomSocial:not(:last-child) {
+    margin-right: 30px;
+}
+
+.heroContentBottomSocial:last-child {
+    margin-left: auto;
+}
+
+.btnLight {
+    transition: .3s linear;
+}
+
+.btnLight:hover {
+    background-color: #df5d55;
+}
+
+
+@media (max-width: 1440px) {
+    .heroContentTop {
+        margin-bottom: 80px;
+    }
+
+    .heroContentTopTitle {
+        font-size: 58px;
+        margin-bottom: 30px;
+    }
+
+    .heroContentTopText {
+        font-size: 18px;
+    }
+
+    .heroContentTopButton {
+        padding: 12px 14px;
+        max-width: 175px;
+    }
+
+    .heroContentBottomSocialImg {
+        height: 18px;
+        width: 16px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .heroContentTop {
+        margin-bottom: 0;
+    }
+
+    .heroContentTopTitle {
+        font-size: 52px;
+        margin-bottom: 20px;
+    }
+
+    .heroContentTopSession {
+        display: none;
+    }
+
+    .heroContentTopText {
+        font-size: 14px;
+    }
+
+    .heroContentTopSession {
+        font-size: 12px;
+        line-height: 12px;
+        margin-bottom: 10px;
+    }
+
+    .heroContentTopLessons {
+        font-size: 10px;
+        padding-left: 10px;
+        font-feature-settings: "pnum" on, "lnum" on;
+    }
+
+    .heroContentTopButton {
+        font-size: 14px;
+    }
+
+    .heroContentBottomSocial {
+        width: 36px;
+        height: 36px;
+    }
+
+    .heroContentBottomSocial:last-child {
+        margin-left: 0;
+    }
+
+    .fade {
+        bottom: -30%;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        background-size: 170%;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero {
+        background-size: cover;
+        background-position: 68%;
+    }
+
+    .heroContent {
+        align-items: center;
+    }
+
+    .heroContentTop {
+        height: 100%;
+        align-items: flex-end;
+        text-align: center;
+        padding-bottom: 40px;
+    }
+
+    .heroContentTopTitle {
+        font-size: 38px;
+    }
+
+    .heroContentTopText {
+        color: #fff;
+    }
+
+    .heroContentTopLessonsWrapper {
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+    .heroContentTopLeft {
+        align-items: center;
+    }
+
+    .heroContentBottom {
+        width: initial;
+    }
+
+    .fade {
+        bottom: -20%;
+    }
+}
+

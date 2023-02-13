@@ -1,0 +1,26 @@
+.education {
+    padding-bottom: 200px
+}
+
+.title {
+    position: relative;
+    font-size: 50px;
+    line-height: 59px;
+    margin-bottom: 100px;
+    display: inline-block;
+    transform: translateX(-50%);
+    left: 50%;
+    text-transform: uppercase
+}
+
+.wrapper {
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

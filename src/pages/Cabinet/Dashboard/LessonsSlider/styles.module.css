@@ -1,0 +1,68 @@
+.wrapper {
+    font-family: Raleway, sans-serif;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    min-height: 140px;
+}
+
+.slider {
+    max-width: 650px;
+}
+
+.buttonWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-width: 220px;
+    max-width: 300px;
+    margin-left: 20px;
+}
+
+.linkToLessons {
+    font-size: 12px;
+    font-weight: 600;
+    padding: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    width: 100%;
+    color: #ffffff;
+    background-color: #DA3A30;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.sliderButtons {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1024px) {
+    .wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .slider {
+        max-width: 100%;
+    }
+
+    .sliderButtons {
+        min-width: 80px;
+        margin-left: 40px;
+    }
+
+    .linkToLessons {
+        margin-bottom: 0;
+    }
+
+    .buttonWrapper {
+        width: 100%;
+        max-width: none;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 0;
+    }
+}
+

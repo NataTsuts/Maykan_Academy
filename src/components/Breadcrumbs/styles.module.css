@@ -1,0 +1,36 @@
+.wrapper {
+    margin-bottom: 60px;
+}
+
+.link {
+    font-family: Raleway, sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    color: #9F9F9F;
+    padding: 0 10px;
+}
+
+.breadcrumb:not(:first-child)::before {
+    content: "-";
+    color: #fff;
+}
+
+.breadcrumb:first-child .link {
+    padding-left: 0;
+}
+
+.breadcrumb:last-child .link {
+    color: #fff;
+    padding-right: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .wrapper {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .link {
+    }
+}

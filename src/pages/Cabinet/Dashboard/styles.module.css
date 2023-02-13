@@ -1,0 +1,17 @@
+.dashboard {
+    width: 100%;
+}
+
+.dashboard hr {
+    border: 0;
+    border-top: 1px solid #969696;
+    background: none;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 426px) {
+    .dashboard hr {
+        border-top: none
+    }
+}

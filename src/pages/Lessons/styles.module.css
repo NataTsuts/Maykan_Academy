@@ -1,0 +1,19 @@
+.wrapper {
+    display: flex;
+    font-family: Raleway, sans-serif;
+}
+
+.courseContainer {
+    padding-top: 160px;
+    padding-bottom: 80px;
+}
+
+@media screen and (max-width: 768px) {
+    .courseContainer {
+        padding-top: 80px;
+    }
+
+    .wrapper {
+        flex-direction: column;
+    }
+}

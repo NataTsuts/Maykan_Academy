@@ -1,0 +1,9 @@
+.text {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,171 @@
+.wrapper {
+    font-family: Raleway, sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 51px
+}
+
+.homeLink {
+    display: inline-block;
+    margin-bottom: 70px
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.description {
+    max-width: 335px;
+}
+
+.descriptionTitle {
+    font-weight: 600;
+    display: block;
+    font-size: 20px;
+    line-height: 23px;
+    text-transform: uppercase;
+    margin-bottom: 20px
+}
+
+.descriptionText {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #9f9f9f
+}
+
+.nav {
+    min-width: 300px;
+}
+
+.navTitle {
+    display: block;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    text-transform: uppercase;
+    margin-bottom: 30px
+}
+
+.item:not(:last-child) {
+    margin-bottom: 20px
+}
+
+.navLink {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    color: #fff
+}
+
+.news {
+    display: flex;
+    flex-direction: column
+}
+
+.newsTitle {
+    font-size: 20px;
+    line-height: 23px;
+    text-transform: uppercase;
+    margin-bottom: 30px
+}
+
+.newsText {
+    font-size: 16px;
+    line-height: 19px;
+    color: #9f9f9f;
+    margin-bottom: 58px
+}
+
+.button {
+    border: transparent;
+    border-radius: 10px;
+    background-color: #da3a30;
+    color: #fff;
+    padding: 18px 110px;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    cursor: pointer
+}
+
+.light {
+    transition: .3s linear
+}
+
+.light:hover {
+    background-color: #df5d55
+}
+
+.license {
+    position: relative;
+    display: flex;
+    font-size: 15px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 20px
+}
+
+.license::before {
+    border: 1px solid #9f9f9f;
+    width: 100%;
+    content: "";
+    position: absolute;
+    top: 0
+}
+
+@media (max-width: 1200px) {
+    .newsTitle {
+        font-size: 18px
+    }
+}
+
+@media (max-width: 1024px) {
+    .newsTitle {
+        font-size: 18px
+    }
+
+    .newsText {
+        margin-bottom: 35px
+    }
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .nav {
+        margin-bottom: 30px;
+    }
+
+    .description {
+        margin-bottom: 30px;
+    }
+
+    .homeLink {
+        display: none;
+    }
+
+    .newsTitle {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .newsText {
+        font-size: 14px
+    }
+}
+
+@media (max-width: 576px) {
+
+}

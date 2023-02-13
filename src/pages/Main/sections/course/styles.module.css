@@ -1,0 +1,19 @@
+.course {
+    padding-bottom: 200px
+}
+
+.title {
+    display: block;
+    text-align: center;
+    font-size: 50px;
+    line-height: 59px;
+    margin-bottom: 90px;
+    text-transform: uppercase
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}

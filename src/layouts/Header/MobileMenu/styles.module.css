@@ -1,0 +1,50 @@
+.menu {
+    display: none;
+    align-items: center;
+    transition: .45s ease-in-out;
+    height: 100vh;
+    background: rgba(0, 0, 0, .9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.item {
+    width: 100%;
+}
+
+.menuLink {
+    font-family: Raleway, sans-serif;
+    font-weight: 600;
+    display: block;
+    font-size: 22px;
+    line-height: 24px;
+    font-feature-settings: "pnum" on, "lnum" on;
+    color: #fff
+}
+
+@media (max-width: 1024px) {
+    .menu {
+        display: flex;
+    }
+
+    .list {
+        position: relative;
+        display: inline-block;
+        transform: translateX(-50%);
+        left: 50%;
+        text-align: center;
+        width: 343px
+    }
+
+    .item {
+        display: block;
+        position: relative
+    }
+
+    .item:not(:last-child) {
+        margin-bottom: 25px
+    }
+}
